@@ -1,14 +1,120 @@
-this is my first lab in CID lab
 <!DOCTYPE html>
-<html> 
-<head> 
-<title>My GitHub Page</title>
-</head> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My GitHub Page</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0d1117;
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            background: #161b22;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h2 {
+            margin: 0;
+            color: #58a6ff;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        .container {
+            padding: 80px 20px;
+        }
+
+        h1 {
+            font-size: 42px;
+        }
+
+        p {
+            color: #c9d1d9;
+            font-size: 18px;
+        }
+
+        button {
+            background: #238636;
+            color: white;
+            border: none;
+            padding: 14px 25px;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #2ea043;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            color: #8b949e;
+        }
+    </style>
+</head>
+
 <body>
-<h1>Welcome to My GitHub Page</h1>
-<p>This is my first website using GitHub Pages.</p>
 
-<a href="https://github.com/">Visit GitHub</a>
+    <header>
+        <h2>GitHub</h2>
 
-</body> 
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="container" id="home">
+        <h1>Welcome to My GitHub Page!</h1>
+
+        <p>
+            Explore my projects and discover what I create
+            using HTML, CSS, and JavaScript.
+        </p>
+
+        <button onclick="showMessage()">
+            Get Started
+        </button>
+
+        <p id="message"></p>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am learning web development and coding.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: myemail@example.com</p>
+    </section>
+
+    <footer>
+        <p>© 2026 My GitHub Page</p>
+    </footer>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").textContent =
+                "Welcome! Thanks for visiting my website.";
+        }
+    </script>
+
+</body>
 </html>
